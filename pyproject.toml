@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "langchain-course"
+version = "0.1.0"
+description = ""
+authors = ["Maxbeurer <haaandrew.feng@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+langchain = "^1.0.5"
+langchain-openai = "^1.0.2"
+langchain-tavily = "^0.2.13"
+langgraph = "^1.0.3"
+python-dotenv = "^1.2.1"
+black = "^25.11.0"
+isort = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.11.0"
+isort = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
