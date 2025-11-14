@@ -7,6 +7,7 @@ from graph.chains.retrieval_grader import GradeDocuments, retrieval_grader
 from graph.chains.generation import generation_chain    
 from ingestion import retriever
 from graph.chains.hallucination_grader import hallucination_grader, GradeHallucinations
+from graph.chains.router import question_router, RouteQuery
 
 def test_retrival_grader_answer_yes() -> None:
     question = "agent memory"
